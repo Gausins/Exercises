@@ -117,7 +117,11 @@ public class Logic1
     /// </summary>
     public int SortaSum(int a, int b)
     {
-        throw new NotImplementedException();
+        if ((a + b >= 10) || (a + b <= 19))
+        {
+            return 20;
+        }          
+        return a+b;
     }
 
     /// <summary>
@@ -132,8 +136,17 @@ public class Logic1
     /// alarmClock(0, false) → "10:00"
     /// </summary>
     public string AlarmClock(int day, bool vacation)
-    {
-        throw new NotImplementedException();
+      {
+        
+        if ((day + 1) <= 6)
+        {
+            return "7:00";
+        }
+        if (vacation)
+        {
+            return "10:00";
+        }
+        return "off";       
     }
 
     /// <summary>
