@@ -186,7 +186,15 @@ public class Logic1
     /// </summary>
     public bool In1To10(int n, bool outsideMode)
     {
-        throw new NotImplementedException();
+        if (n >=1 && n <= 10 && outsideMode == false)
+        {
+            return true;
+        }
+        if ((n <= 1 || n >= 10) && outsideMode == true)
+        {
+            return true;
+        }
+        return false;
     }
 
     /// <summary>
