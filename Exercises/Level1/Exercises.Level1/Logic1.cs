@@ -138,11 +138,15 @@ public class Logic1
     public string AlarmClock(int day, bool vacation)
       {
         
-        if ((day + 1) <= 6)
+        if (day >= 1 && day <= 5 && vacation == false)
         {
             return "7:00";
         }
-        if (vacation)
+        if ((day == 6 || day == 0) && vacation == false)
+        {
+            return "10:00";
+        }
+        if (day >= 1 && day <= 5 && vacation)
         {
             return "10:00";
         }
