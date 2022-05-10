@@ -245,7 +245,11 @@ public class Logic1
     /// </summary>
     public bool Old35(int n)
     {
-        throw new NotImplementedException();
+        if ((n % 3) == 0 || (n % 5) == 0)
+        {
+            return true;
+        }
+        return false;
     }
 
     /// <summary>
@@ -259,7 +263,11 @@ public class Logic1
     /// </summary>
     public bool Less20(int n)
     {
-        throw new NotImplementedException();
+        if (n % 20 == 0 - 1 || n % 20 == 0 - 2)
+        {
+            return true;
+        }
+        return true;
     }
 
     /// <summary>
@@ -273,7 +281,19 @@ public class Logic1
     /// </summary>
     public bool NearTen(int num)
     {
-        throw new NotImplementedException();
+        if (num % 10 == 0)
+        {
+            return true;
+        }
+        if (num % 10 == 0 + 8 || num % 10 == 0 + 9)
+        {
+            return true;
+        }
+        if (num % 10 == 0 + 1 || num % 10 == 0 + 2)
+        {
+            return true;
+        }
+        return false;
     }
 
     /// <summary>
