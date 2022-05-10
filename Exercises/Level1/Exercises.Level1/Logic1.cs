@@ -263,11 +263,11 @@ public class Logic1
     /// </summary>
     public bool Less20(int n)
     {
-        if (n % 20 == 0 - 1 || n % 20 == 0 - 2)
+        if ((n % 20) == 1 && (n % 20) == 2)
         {
             return true;
         }
-        return true;
+        return false;
     }
 
     /// <summary>
@@ -306,7 +306,15 @@ public class Logic1
     /// </summary>
     public int TeenSum(int a, int b)
     {
-        throw new NotImplementedException();
+        if (a >= 13 && a <= 19)
+        {
+            return 19;
+        }
+        if (b >= 13 && b <= 19)
+        {
+            return 19;
+        }
+        return a + b;
     }
 
     /// <summary>
