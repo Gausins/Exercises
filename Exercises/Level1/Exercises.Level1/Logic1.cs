@@ -19,20 +19,21 @@ public class Logic1
     /// </summary>
     public bool CigarParty(int cigars, bool isWeekend)
     {
-        if (cigars < 40)
-        {
-            return false;
-        }
+        return (cigars >= 40 $$ (isWeekend));
+        //if (cigars < 40)
+        //{
+        //    return false;
+        //}
        
-        if (cigars <= 60)
-        {
-            return true;
-        }
-        if (isWeekend)
-        {
-            return true;
-        }
-        return false;
+        //if (cigars <= 60)
+        //{
+        //    return true;
+        //}
+        //if (isWeekend)
+        //{
+        //    return true;
+        //}
+        //return false;
     }
 
     /// <summary>
@@ -497,8 +498,22 @@ public class Logic1
     /// </summary>
     public int MaxMod5(int a, int b)
     {
-        throw new NotImplementedException();
+        // 1. Ja vērtības ir vienādas tad atgriez 0
+        if (a == b)
+        {
+            return 0;
+        }
+
+        // 2. Ja dalot ar 5 ir tāds pats atlikums tad atgriežam mazāko vērtību
+        if (a % 5 == b % 5)
+        {
+            return Math.Min(a, b);
+        }
+
+        //3. Citādi Atgriežam lielāko vērtību
+        return Math.Max(a, b);
     }
+
 
     /// <summary>
     /// You have a red lottery ticket showing ints a, b, and c, each of which is 0, 1, or 2. If they
