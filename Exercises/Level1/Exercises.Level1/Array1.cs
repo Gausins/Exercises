@@ -57,7 +57,7 @@ public class Array1
     /// </summary>
     public int[] MakePi()
     {
-        throw new NotImplementedException();
+        return new int[] { 3, 1, 4 }
     }
 
     /// <summary>
