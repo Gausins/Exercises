@@ -190,7 +190,7 @@ public class Array1
     /// </summary>
     public int[] MakeEnds(int[] nums)
     {
-        throw new NotImplementedException();
+        return new int[] { nums[0], nums[nums.Length - 1] };
     }
 
     /// <summary>
