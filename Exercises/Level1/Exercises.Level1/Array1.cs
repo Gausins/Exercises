@@ -107,7 +107,7 @@ public class Array1
     /// </summary>
     public int[] RotateLeft3(int[] nums)
     {
-        throw new NotImplementedException();
+        return new int[] { nums[1], nums[2], nums[0] };
     }
 
     /// <summary>
