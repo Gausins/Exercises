@@ -17,7 +17,7 @@ public class Logic1
     /// cigarParty(50, false) → true
     /// cigarParty(70, true) → true
     /// </summary>
-<<<<<<< HEAD
+
     //public bool CigarParty(int cigars, bool isWeekend)
     //if (cigars, 40)
     //    {
@@ -32,9 +32,9 @@ public class Logic1
     //    return true;
     //}
 
-    public bool CigarParty(int cigars, bool isWeekend)
-    {
-        return (cigars >= 40 $$ (isWeekend));
+    //public bool CigarParty(int cigars, bool isWeekend)
+    //{
+        //return (cigars >= 40 $$ (isWeekend));
         //if (cigars < 40)
         //{
         //    return false;
@@ -49,7 +49,7 @@ public class Logic1
         //    return true;
         //}
         //return false;
-    }
+   // }
 
 
     /// <summary>

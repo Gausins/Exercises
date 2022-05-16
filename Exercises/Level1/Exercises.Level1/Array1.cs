@@ -57,7 +57,7 @@ public class Array1
     /// </summary>
     public int[] MakePi()
     {
-        return new int[] { 3, 1, 4 }
+        return new int[] { 3, 1, 4 };
     }
 
     /// <summary>
@@ -70,7 +70,12 @@ public class Array1
     /// </summary>
     public bool CommonEnd(int[] a, int[] b)
     {
-        throw new NotImplementedException();
+        // 1. Izgūstam abu masīvu pirmos elementus un salīdzinam
+        //  Ja ir vienādi, tad atgriežam vērtību true
+        // 2. Izgūstam abu masīvu pēdējos elementus un salīdzinam
+        //  Ja ir vienādi, tad atgriežam vērtību true
+        // 3. citādi atgriežam vērtību false
+        return a[0] == b[0] || a[a.Length - 1] == b[b.Length - 1];
     }
 
     /// <summary>
