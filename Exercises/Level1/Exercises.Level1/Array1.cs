@@ -39,7 +39,15 @@ public class Array1
     /// </summary>
     public bool SameFirstLast(int[] nums)
     {
-        throw new NotImplementedException();
+        // 1. Ja masīvs ir īsāks par 1 tad atgriežam false
+        if (nums.Length == 0)
+        {
+            return false;
+        }
+
+        // 2. Izgūstam pirmo un pēdējo elementu
+        // 3. Salīdzinām vai elementi ir vienādi
+        return nums[0] == nums[nums.Length - 1];
     }
 
     /// <summary>
