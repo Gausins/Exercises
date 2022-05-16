@@ -17,10 +17,19 @@ public class Logic1
     /// cigarParty(50, false) → true
     /// cigarParty(70, true) → true
     /// </summary>
-    public bool CigarParty(int cigars, bool isWeekend)
-    {
-        throw new NotImplementedException();
-    }
+    //public bool CigarParty(int cigars, bool isWeekend)
+    //if (cigars, 40)
+    //    {
+    //    returne false;
+    //    }
+    //if (isWeekend)
+    //{
+    //returne true;
+    //}
+    //if (cigars <= 60)
+    //{
+    //    return true;
+    //}
 
     /// <summary>
     /// You and your date are trying to get a table at a restaurant. The parameter "you" is the

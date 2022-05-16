@@ -19,7 +19,14 @@ public class Array1
     /// </summary>
     public bool FirstLast6(int[] nums)
     {
-        throw new NotImplementedException();
+        // 1. Izgūstam pirmo elementu
+        int first = nums[0];
+
+        // 2. Izgūstam pēdējo elementu 
+        int last = nums[nums.Length - 1];
+
+        // 3. Atgriežam vērtību true, ja kalt viens ir vienāds ar 6
+        return last == 6 || first == 6;
     }
 
     /// <summary>
