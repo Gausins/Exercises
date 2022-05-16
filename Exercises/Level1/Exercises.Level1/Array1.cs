@@ -177,7 +177,7 @@ public class Array1
     /// </summary>
     public int[] MiddleWay(int[] a, int[] b)
     {
-        throw new NotImplementedException();
+        return new int[] { a[1], b[1] };
     }
 
     /// <summary>
