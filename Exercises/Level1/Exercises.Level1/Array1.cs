@@ -87,9 +87,16 @@ public class Array1
     /// </summary>
     public int Sum3(int[] nums)
     {
-        throw new NotImplementedException();
-    }
+        // 1. Piedefinējam mainīgo, kurā glabāsim summas vērtību
+        int sum = 0;
 
+        foreach (var item in nums)
+        {
+            // 2. Katrā iterācijā pieskai'tām sum mainīgajam katra elementa no masīva vērtību
+            sum += item;
+        }
+        return sum;
+    }
     /// <summary>
     /// Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2,
     /// 3} yields {2, 3, 1}.
