@@ -26,6 +26,20 @@ public class HalfTriangle
     /// <returns></returns>
     public string[] GetHalfTriangle(int n)
     {
-        throw new NotImplementedException();
+        int NumOfLines = 5;
+        for (int i = 0; i < NumOfLines; i++)
+        {
+            for (int j = 0; j < n - i; j++)
+            {
+                Console.Write(" ");
+            }
+            for (int k = 0; k <= i; k++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine();
+        }
+        Console.ReadLine();
+        throw new ();
     }
 }
