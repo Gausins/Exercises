@@ -133,7 +133,16 @@ public class Array1
     /// </summary>
     public int[] MaxEnd3(int[] nums)
     {
-        throw new NotImplementedException();
+        int[] max;
+        if (nums[0] > nums[2])
+        {
+            max = new int[] { nums[0], nums[0], nums[0] };
+        }
+        else
+        {
+            max = new int[] { nums[2], nums[2], nums[2] };
+        }
+        return max;
     }
 
     /// <summary>
