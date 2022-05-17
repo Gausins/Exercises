@@ -26,20 +26,16 @@ public class HalfTriangle
     /// <returns></returns>
     public string[] GetHalfTriangle(int n)
     {
-        int NumOfLines = 5;
-        for (int i = 0; i < NumOfLines; i++)
+        int i, j, lines;
+
+        Console.Write("Input number of Lines : ");
+        lines = Convert.ToInt32(Console.ReadLine());
+        for (i = 1; i <= lines; i++)
         {
-            for (int j = 0; j < n - i; j++)
-            {
-                Console.Write(" ");
-            }
-            for (int k = 0; k <= i; k++)
-            {
-                Console.Write("* ");
-            }
-            Console.WriteLine();
+            for (j = 1; j <= i; j++)
+            Console.Write("*", j);
+            Console.Write("\n");
         }
-        Console.ReadLine();
-        throw new ();
+    return new string[lines];
     }
 }
