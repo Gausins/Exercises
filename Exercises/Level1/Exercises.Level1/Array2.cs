@@ -17,7 +17,15 @@ public class Array2
     /// </summary>
     public int CountEvens(int[] nums)
     {
-        throw new NotImplementedException();
+        {
+            int evens = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] % 2 == 0) evens++;
+            }
+            return evens;
+        }
     }
 
     /// <summary>
@@ -31,7 +39,17 @@ public class Array2
     /// </summary>
     public int BigDiff(int[] nums)
     {
-        throw new NotImplementedException();
+        int small_num = 0, biggest_num = 0;
+
+        if (nums.Length > 0) small_num = biggest_num = nums[0];
+
+        for (int i = 1; i < nums.Length; i++)
+        {
+            small_num = Math.Min(small_num, nums[i]);
+            biggest_num = Math.Max(biggest_num, nums[i]);
+        }
+
+        return biggest_num - small_num;
     }
 
     /// <summary>
@@ -47,7 +65,18 @@ public class Array2
     /// </summary>
     public int CenteredAverage(int[] nums)
     {
-        throw new NotImplementedException();
+        int max_value = nums[0];
+        int min_value = nums[0];
+        int sum = nums[0];
+        for (int x = 1; x < nums.Length; x++)
+        {
+            sum += nums[x];
+            if (nums[x] > max_value)
+                max_value = nums[x];
+            else if (nums[x] < min_value)
+                min_value = nums[x];
+        }
+        return (sum - max_value - min_value) / (nums.Length - 2);
     }
 
     /// <summary>
@@ -61,7 +90,30 @@ public class Array2
     /// </summary>
     public int Sum13(int[] nums)
     {
-        throw new NotImplementedException();
+            if (nums.Length == 0)
+            {
+                return 0;
+            }
+
+            int sum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 13)
+                {
+                    sum += nums[i];
+                }
+                else 
+                {
+                    nums[i] = 0;
+
+                    if (i + 1 < nums.Length)
+                    {
+                        nums[i + 1] = 0;
+                    }
+                }
+            }
+            return sum;
     }
 
     /// <summary>
@@ -75,7 +127,21 @@ public class Array2
     /// </summary>
     public int Sum67(int[] nums)
     {
-        throw new NotImplementedException();
+        int sum = 0;
+        Boolean sixNums = false;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (sixNums)
+            {
+                if (nums[i] == 7)
+                    sixNums = false;
+            }
+            else if (nums[i] == 6)
+                sixNums = true;
+            else
+                sum += nums[i];
+        }
+        return sum;
     }
 
     /// <summary>

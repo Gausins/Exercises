@@ -27,7 +27,6 @@ public class HalfTriangle
     public string[] GetHalfTriangle(int n)
     {
         int i, j, lines;
-
         Console.Write("Input number of Lines : ");
         lines = Convert.ToInt32(Console.ReadLine());
         for (i = 1; i <= lines; i++)
